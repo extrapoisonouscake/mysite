@@ -1,0 +1,80 @@
+@import 'scss/variables';
+@font-face{
+  font-family:'Neue Machina';
+  font-weight:normal;
+  font-style:normal;
+  src:url('fonts/NeueMachina-Regular.ttf') format('truetype');
+}
+
+@font-face{
+  font-family:'Neue Machina';
+  font-weight:500;
+  font-style:normal;
+  src:url('fonts/NeueMachina-Bold.ttf') format('truetype');
+}
+
+@font-face{
+  font-family:'Neue Machina';
+  font-weight:bold;
+  font-style:normal;
+  src:url('fonts/NeueMachina-Ultrabold.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  padding:0;
+  color:$color;
+  font-size:1.1rem;
+  background:$bg;
+  font-family: 'Neue Machina',system-ui,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *:before, *:after{
+  box-sizing: border-box;
+  outline: none;
+}
+a{
+  text-decoration:none;
+  color:$color;
+}
+p,h1,h2,h3,h4,h5,h6{
+
+  margin:$text-margin;
+}
+h1{
+  font-size:3.5rem;
+}
+h2{
+  font-size:2.5rem;
+}
+button{
+  background: $gradient-first-color;
+  border-radius:$radius-mini;
+  padding:10px;
+  font-weight: 300;
+  color:$color;
+  margin:$text-margin;
+  cursor:pointer;
+  border:none;
+  font-family: 'Neue Machina';
+}
+.section{
+    width:100%;
+    display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section{
+  & > p, & > h1,& > h2,& > h3{
+    text-align: center;
+  }
+}
+.text_medium{
+  font-weight:500;
+}
+.text_tiny{
+  font-size:0.8rem;
+  color:rgb(173, 173, 173);
+}
